@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Product Catalog
 
-## Getting Started
+Каталог товаров с возможностью поиска, фильтрации и добавления в корзину.
 
-First, run the development server:
+## Технологии
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Zustand
+- Axios
+
+## Функциональность
+
+- Просмотр списка товаров
+- Поиск товаров
+- Фильтрация по категориям
+- Добавление товаров в корзину
+- Управление количеством товаров в корзине
+- Адаптивный дизайн
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/yourusername/product-catalog.git
+cd product-catalog
+```
+
+2. Установите зависимости:
+
+```bash
+npm install
+```
+
+3. Запустите приложение в режиме разработки:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Откройте [http://localhost:3001](http://localhost:3001) в браузере.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Деплой
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Приложение настроено для автоматического деплоя через Vercel:
 
-## Learn More
+1. Создайте аккаунт на [Vercel](https://vercel.com)
+2. Подключите ваш GitHub репозиторий
+3. Vercel автоматически определит Next.js приложение и настроит сборку
+4. При каждом пуше в main ветку будет происходить автоматический деплой
 
-To learn more about Next.js, take a look at the following resources:
+### Переменные окружения
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+В Vercel настроены следующие переменные окружения:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `NEXT_PUBLIC_API_URL` - URL API для получения данных о товарах
 
-## Deploy on Vercel
+## Структура проекта
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  ├── app/              # Страницы приложения
+  ├── components/       # React компоненты
+  ├── store/           # Zustand store
+  ├── api/             # API функции
+  └── types/           # TypeScript типы
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Лицензия
+
+MIT
