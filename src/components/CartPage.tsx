@@ -51,7 +51,7 @@ export default function CartPage() {
                     id={`quantity-${item.id}`}
                     min='1'
                     value={item.quantity}
-                    onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
+                    onChange={(e) => updateQuantity(item.id, parseInt(e.target.value) || 1)}
                     className='w-24 px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#005bff] focus:border-transparent text-gray-800'
                   />
                   <button
