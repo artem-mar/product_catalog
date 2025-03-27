@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --removed-body-scroll-bar-size: 0px;
+}
+
+html {
+  scrollbar-gutter: stable;
+  overflow-y: overlay;
 }
 
 body {
