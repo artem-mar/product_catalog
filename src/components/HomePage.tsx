@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import ProductCard from "@/components/ProductCard"
 import { Product } from "@/types"
-import ProductModal from "@/components/ProductModal"
+import ProductSidePanel from "@/components/ProductSidePanel"
 import { useProductsStore } from "@/store/useProductsStore"
 
 const categories = ["all", "electronics", "jewelery", "men's clothing", "women's clothing"]
@@ -81,7 +81,7 @@ export default function HomePage() {
           ))}
         </div>
       )}
-      <ProductModal
+      <ProductSidePanel
         product={selectedProduct}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
