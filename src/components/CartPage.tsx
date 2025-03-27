@@ -56,7 +56,7 @@ export default function CartPage() {
                   />
                   <button
                     onClick={() => removeItem(item.id)}
-                    className='text-gray-400 hover:text-red-500 transition-colors p-2 hover:bg-red-50 rounded-lg'
+                    className='text-gray-400 hover:text-red-500 transition-colors p-2 hover:bg-red-50 active:scale-95 rounded-lg'
                   >
                     <TrashIcon className='h-5 w-5' />
                   </button>

@@ -54,7 +54,7 @@ export default function HomePage() {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-6 py-2 rounded-xl font-medium whitespace-nowrap transition-all duration-200 ${
+            className={`px-6 py-2 rounded-xl font-medium whitespace-nowrap transition-all duration-200 cursor-pointer ${
               selectedCategory === category
                 ? "bg-[#005bff] text-white shadow-lg shadow-[#005bff]/20"
                 : "bg-gray-50 text-gray-600 hover:bg-gray-100"

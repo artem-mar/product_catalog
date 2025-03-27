@@ -45,7 +45,7 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
               e.stopPropagation()
               addItem(product)
             }}
-            className='w-full bg-[#005bff] text-white px-4 py-2.5 rounded-lg hover:bg-[#0052e6] transition-colors flex items-center justify-center gap-2 font-medium cursor-pointer'
+            className='w-full bg-[#005bff] text-white px-4 py-2.5 rounded-lg hover:bg-[#0052e6] active:scale-99 transition-colors flex items-center justify-center gap-2 font-medium cursor-pointer'
           >
             <ShoppingCartIcon className='h-5 w-5' />В корзину
           </button>

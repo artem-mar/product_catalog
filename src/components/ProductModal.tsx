@@ -25,7 +25,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
             <h2 className='text-2xl font-bold text-gray-800'>{product.title}</h2>
             <button
               onClick={() => onClose()}
-              className='text-gray-400 hover:text-gray-600 transition-colors'
+              className='text-gray-400 hover:text-gray-600 active:scale-95 transition-colors'
             >
               <XMarkIcon className='h-6 w-6' />
             </button>
@@ -55,7 +55,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
                   addToCart(product)
                   onClose()
                 }}
-                className='bg-[#005bff] text-white px-6 py-2 rounded-xl hover:bg-[#0052e6] transition-colors font-medium'
+                className='bg-[#005bff] text-white px-6 py-2 rounded-xl hover:bg-[#0052e6] active:scale-98 transition-colors font-medium'
               >
                 В корзину
               </button>
