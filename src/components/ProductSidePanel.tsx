@@ -44,7 +44,7 @@ export default function ProductSidePanel({ product, isOpen, onClose }: ProductSi
               <p className='text-gray-600 capitalize'>{product.category}</p>
             </div>
 
-            <div className='flex items-center justify-between gap-12 pt-4 border-t border-gray-100'>
+            <div className='flex items-center justify-between gap-5 sm:gap-12 pt-4 border-t border-gray-100'>
               <div>
                 <span className='text-2xl font-bold text-[#005bff]'>${product.price}</span>
               </div>

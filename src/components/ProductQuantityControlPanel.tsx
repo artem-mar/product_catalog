@@ -28,15 +28,13 @@ const ProductQuantityControlPanel = ({ product }: { product: Product }) => {
 
   return isInCart ? (
     <div className='grid grid-cols-2 gap-4 w-full'>
-      <div>
-        <Link
-          href='/cart'
-          className='block text-center w-full px-4 py-1 bg-[#10c44c] text-white rounded-lg hover:bg-[#11d452] active:scale-99 transition-colors cursor-pointer'
-        >
-          <p className='text-sm font-medium'>В корзине</p>
-          <p className='text-xs'>Перейти</p>
-        </Link>
-      </div>
+      <Link
+        href='/cart'
+        className='block text-center w-full px-4 py-1 bg-[#10c44c] text-white rounded-lg hover:bg-[#11d452] active:scale-99 transition-colors cursor-pointer'
+      >
+        <p className='text-sm font-medium'>В корзине</p>
+        <p className='text-xs'>Перейти</p>
+      </Link>
       <div className='flex items-center justify-between'>
         <button
           onClick={decrementProductQuantity}
